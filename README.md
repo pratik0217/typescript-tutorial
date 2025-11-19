@@ -46,3 +46,36 @@ Note - Float have in TS but not declaring num:float this throw the error right w
 - apply boolean data type
 - Possible boolean values (only true or false passible not a yes or no, 0 or 1).
 - inference and declaration issues 
+
+# Null(No value) & Undefined(Variable declared but not assigned) Datatype in TS
+What is Null datatype ?
+- The null datatype represents a variable that has no value or is empty. It is a primitive type, just like string or number.
+- The only value a null type variable can hold is null.
+- Null typeof is Object.
+Example : let value: null = null;
+<br><br><br>
+
+What is Undefined Datatype ?
+- The undefined datatype represents a variable that has been declared but has not been assigned a value. It is one of the primitive types.
+- The only value an undefined type variable can hold is undefined.
+- undefined typeof is undefiend.
+Example : let value: undefined = undefined;
+
+# Typescript Configu file
+How to generate config file ?
+- npx tsc --init
+<br> 
+Convert all TS file to JS Together ?
+- tsc
+
+# BigInt Data type
+What is BigInt datatype ?
+- bigint is a primitive datatype used to represent integers larger than the safe limit of the number type.
+<br>
+<br>
+<br>
+
+# Symbol Datatype
+What is Symbol datatype ?
+- Each symbol is unique, even if two symbols have the same description.
+- Useful when you want to create a property key that won’t collide with other keys.
