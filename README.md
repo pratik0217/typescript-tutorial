@@ -14,3 +14,17 @@ Installation Typescript
 - npx tsc fileName --watch this help for checking the changes in typescript file then also converted in App.js
 
 # Data types in Typescript
+What is Datatypes in TS ?
+- which data store in variable that is called Datatype in TS
+- example : var language:string = "Typescript", var phoneNumber:number = 70383029, var male:boolea = true ;
+
+Datatypes categories ? 
+- Primitive types : Inbuilt data type in TS - number, string, boolean, null, undefined, bigint, symbol.
+- Object types : Array, Tuple(fixed-length array with different types) & Object (keys-pair value collection).
+- Special types : Any(Accepts any value (not recommended).),unknown(Safer than any), void(Function returns nothing.) & never(Function never returns.).
+- Advanced Types : Union(A variable can hold multiple types), Intersection(Combines multiple types), Type alias(Defines custom types), Enum & Literal types(Restricts a value to a specific set).
+- Function types (something people to accourding this types or Not list) : Defines the type of a function.
+
+Note - Float have in TS but not declaring num:float this throw the error right way declear float(decimal number) as a percentage:number = 67.90;
+
+# Number Data type in TS
