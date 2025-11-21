@@ -79,3 +79,25 @@ What is BigInt datatype ?
 What is Symbol datatype ?
 - Each symbol is unique, even if two symbols have the same description.
 - Useful when you want to create a property key that won’t collide with other keys.
+
+# Array & Tuple Datatype
+- Collection of a same datatype
+- Predefined datatype
+<br>
+<br>
+Tuple Array datatype
+- A tuple is fixed-length.
+- Ordered collection of different types.
+- Each element in a tuple has a specific type.
+- Tuple is only work it in Typescript language not javascript.
+<img width="663" height="213" alt="Screenshot 2025-11-21 231953" src="https://github.com/user-attachments/assets/6d351d27-989b-4031-8838-258c6df9f927" />
+<br>
+
+# Object & Nested Object Datatype
+- key-pair type store the value.
+<img width="877" height="716" alt="Screenshot 2025-11-22 001027" src="https://github.com/user-attachments/assets/d385b1f9-b092-43de-af27-19eea54e703c" />
+<br>
+- If did not knows how many key have in object then use this method.
+<img width="812" height="360" alt="Screenshot 2025-11-22 001047" src="https://github.com/user-attachments/assets/9b89e9f4-7d91-4857-b097-a6fc9f3d7b68" />
+
+# Any and Unknown
