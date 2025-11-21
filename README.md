@@ -149,3 +149,9 @@ What is an Interface in TypeScript?
 - It specifies what properties and methods an object or class should have.
 - It only exists at compile time — it does not generate JavaScript code.
 - Similar to a contract in OOP.
+
+# Intersection types in Typescript
+- An intersection type combines two or more types into one type.
+- The resulting type must satisfy all the combined types.
+- Written using the & symbol.
+<img width="928" height="301" alt="Screenshot 2025-11-22 021810" src="https://github.com/user-attachments/assets/b15a361a-72f4-4f15-bef0-67728a17d3b2" />
