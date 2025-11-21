@@ -101,3 +101,51 @@ Tuple Array datatype
 <img width="812" height="360" alt="Screenshot 2025-11-22 001047" src="https://github.com/user-attachments/assets/9b89e9f4-7d91-4857-b097-a6fc9f3d7b68" />
 
 # Any and Unknown
+What is Any Datatype ?
+- Which allows a variable to hold values of any type.
+- If are not sure about data type of variable then can use any.
+<br>
+<br>
+Where use Any Datatype ?
+- When migrating JavaScript code to typescript.
+- When dealing with dynamic values from APIs.
+- When working with third-party libraries that lack type definations.
+<br>
+<br>
+What is Unknown Datatype ?
+- The unknown type in typescript is similar to any, but it's safer because it forces type checking before performing operations on the value.
+
+# Return Type in function
+- same javascript type
+# Never in Typescript
+- A function returning 'never' cannot have a reachable end point. ( infinite loop have in function then use 'naver')
+
+# Union Type
+What is a Union Type?
+- Union type means "OR" between types.
+- Written using the pipe symbol: |
+- It tells TypeScript that a value can be any one of several types.
+<img width="678" height="108" alt="Screenshot 2025-11-22 005809" src="https://github.com/user-attachments/assets/92a0504a-6360-413e-b836-d3f53238fe2a" />
+<br>
+Why Use Union Types ?
+- Handling flexible data formats (API responses, form inputs)
+
+<img width="672" height="217" alt="Screenshot 2025-11-22 010019" src="https://github.com/user-attachments/assets/8f1272e2-c89d-41ed-8aac-c3df3bf739fb" />
+<img width="675" height="453" alt="Screenshot 2025-11-22 010033" src="https://github.com/user-attachments/assets/8efc31f0-71bd-4c2f-ad56-503b0d68aa61" />
+<img width="686" height="387" alt="Screenshot 2025-11-22 010111" src="https://github.com/user-attachments/assets/94dc50e5-a720-404f-a2c8-0f990ea11791" />
+<img width="677" height="372" alt="Screenshot 2025-11-22 010132" src="https://github.com/user-attachments/assets/42bdae76-d636-4e8b-a7a4-910f12cc4f62" />
+<img width="693" height="394" alt="Screenshot 2025-11-22 010207" src="https://github.com/user-attachments/assets/2ddcb59c-f6f4-40e1-85fc-d482e6652461" />
+<br>
+<br>
+Best Practices
+- Prefer union types over any
+- Use narrowing (typeof, in, instanceof)
+- Use type aliases for readability
+- Use string literal unions for fixed values
+
+# Interface
+What is an Interface in TypeScript?
+- An interface is a way defines the structure of an object, function and Class.
+- It specifies what properties and methods an object or class should have.
+- It only exists at compile time — it does not generate JavaScript code.
+- Similar to a contract in OOP.
