@@ -1,7 +1,4 @@
-"use strict";
-// Object.defineProperty(exports, "__esModule", { value: true });
-
 var language = "Typescript | Start learn";
 // console.log(language);
 console.log("--- Number Data type in Typescript ---");
-//# sourceMappingURL=app.js.map
+export {};

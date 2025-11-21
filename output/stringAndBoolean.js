@@ -1,5 +1,3 @@
-"use strict";
-// Object.defineProperty(exports, "__esModule", { value: true });
 console.log("");
 console.log("--- String & Boolean TS ---");
 console.log("");
@@ -23,4 +21,4 @@ if (male == true) {
 else {
     console.log("Female!");
 }
-//# sourceMappingURL=stringAndBoolean.js.map
+export {};

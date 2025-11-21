@@ -1,5 +1,3 @@
-"use strict";
-// Object.defineProperty(exports, "__esModule", { value: true });
 // Syntax format = keyword varibaleName : datatype = value;
 var number = 25;
 console.log(number);
@@ -30,4 +28,4 @@ console.log(`Next language start to learn : ${nextLangauge}`);
 var totalMarksPCMB = physics + chemistry + maths + biologyConverted;
 var percentage = totalMarksPCMB * 100 / 400;
 console.log(`Percentage PCMB : ${percentage}`);
-//# sourceMappingURL=numberDatatype.js.map
+export {};
