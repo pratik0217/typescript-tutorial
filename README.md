@@ -1,4 +1,4 @@
-# TYPESCRIPT TUTORIAL
+<img width="624" height="706" alt="image" src="https://github.com/user-attachments/assets/d79be6f0-b2b8-4d33-8267-7706cb86c79d" /># TYPESCRIPT TUTORIAL
 Lecture Video - https://youtu.be/oTam-6tHew4?si=L74yDfjuaSbNPxMy
 <br>
 
@@ -190,3 +190,97 @@ TypeScript classes also support:
 ✔ Getters & setters
 <br>
 <br>
+
+# Access Modifiers
+- Access modifiers are keywords used inside classes to control the visibility (accessibility) of properties and methods.
+- They help create encapsulation, which means hiding internal details and exposing only what is needed.
+- TypeScript has three main access modifiers :- Public, Private & Protected.
+
+1️⃣ public (default)ś
+- Accessible anywhere
+- From inside the class, outside the class, and subclasses
+- If you don’t write anything, TS uses public
+<img width="666" height="233" alt="Screenshot 2025-11-24 205906" src="https://github.com/user-attachments/assets/5968ceb6-2bd9-46d9-8bd8-697e82d39aac" />
+<br>
+<img width="670" height="476" alt="Screenshot 2025-11-24 205922" src="https://github.com/user-attachments/assets/9e8679ce-00ab-4f3d-aca7-3c5f9f3fc871" />
+<br>
+<img width="677" height="544" alt="Screenshot 2025-11-24 205944" src="https://github.com/user-attachments/assets/1dd9ff6f-02eb-42d6-93c5-cd441c644c4d" />
+<br>
+
+# Inheritance in Typescript
+- Inheritance works just like in other object-oriented languages (like Java or C++). It allows a class (child) to inherit properties and methods from another class (parent). This promotes code reuse and extensibility.
+<br><br>
+<img width="624" height="706" alt="Screenshot 2025-11-24 212647" src="https://github.com/user-attachments/assets/25f3cc65-befb-4773-931a-384390bf8b0b" />
+<br>
+<img width="602" height="230" alt="Screenshot 2025-11-24 212856" src="https://github.com/user-attachments/assets/2f2af641-38a1-4952-ae92-87d34eef7bb9" />
+<br>
+🔹 Why Use Inheritance?
+- Avoid code duplication
+- Organize related classes
+- Enable polymorphism
+- Simplify code maintenance
+
+# Modules in Typescript
+- Modules are a way to organize and reuse code by splitting it into separate files. Each file is treated as a module. You can export functions, classes, variables, or interfaces from one module and import them into another.
+<br>
+<img width="663" height="597" alt="Screenshot 2025-11-24 215304" src="https://github.com/user-attachments/assets/e80e32d5-8d6c-4884-be18-6d67fbe21a77" />
+<br>
+<img width="668" height="649" alt="Screenshot 2025-11-24 215337" src="https://github.com/user-attachments/assets/4a7072ff-07bc-4584-9177-bf097f35cce3" />
+<br>
+Why Use Modules?
+- Organize code into smaller, manageable files
+- Avoid global scope pollution
+- Reuse code across projects
+- Work seamlessly with ES6 module system and tools like Webpack, Vite, Node.js
+<br>
+<img width="680" height="427" alt="Screenshot 2025-11-24 215501" src="https://github.com/user-attachments/assets/d02dd782-cce5-4605-81a8-f298fc5a9965" />
+Notes - Module same of react component export and import like
+# Getter and Setter in Typescript
+- Getter & Setter helps to the modification of class when use set & get in class. 
+- Getter and setter methods in TypeScript (TS), often referred to as accessors, allow you to control access to the properties of a class. They provide a way to execute custom logic when a property is read (getter) or written to (setter).
+<br>
+🔑 Key Concepts
+Accessors are defined using the get and set keywords within a class. They operate on a private backing field (a regular class property, typically marked private) which stores the actual data.
+<br>
+1. Getter (get) - return value  
+A getter method is executed when you try to read the value of the property.
+Purpose: To retrieve the value of a private property, often after performing some calculation, formatting, or validation.
+<br>
+Syntax:
+- It must return a value.
+- It takes no arguments.
+<br>
+<img width="786" height="458" alt="Screenshot 2025-11-24 220519" src="https://github.com/user-attachments/assets/83896a8f-4223-4ee2-afe2-1fff40b65ed6" />
+<br><br>
+2. Setter (set)
+A setter method is executed when you try to assign a new value to the property.
+Purpose: To enforce data validation or perform other side effects (like triggering an update) before the new value is stored in the private backing field.
+Syntax:
+- It must take exactly one argument.
+- It does not return a value.
+<br>
+<img width="789" height="584" alt="Screenshot 2025-11-24 220627" src="https://github.com/user-attachments/assets/9fa377ad-0e06-4c49-b128-be3409dbff96" />
+
+# Interface with Class
+- Interfaces in TypeScript describe the shape of an object or class, acting as a contract. A class can use the implements keyword to declare that it adheres to this contract, ensuring it provides all the properties and methods defined by the interface.
+<br>
+<img width="1356" height="720" alt="Screenshot 2025-11-24 231925" src="https://github.com/user-attachments/assets/a59245b4-b47f-44d5-a4a6-522664a1ee40" />
+
+# Static in Typescript
+- use to define static property & Methods.
+- Memory efficiency
+- Utility method
+- Global Constants.
+<br>
+<img width="1226" height="390" alt="Screenshot 2025-11-24 234455" src="https://github.com/user-attachments/assets/3f6e1f01-6969-429b-a9c6-362e36faa7d3" />
+
+# Typeguard in Typescript (check the actual datatype in Interface, class and variable, methods)
+- A type Guard in Typescript is a technoque used to narrow down the type of a variable within a conditional block (check the actual type using conditional block)
+<br><br>
+typeof - This guard checks the basic JavaScript primitive types: string, number, boolean, symbol, bigint, undefined, and object (including arrays and null).
+<br>
+instanceof - This guard checks if a value is an instance of a specific class (or constructor function). It is useful for narrowing down class types within a union.
+<br>
+Custom type - interface
+
+# Generic In TS
