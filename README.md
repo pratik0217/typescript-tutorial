@@ -149,9 +149,44 @@ What is an Interface in TypeScript?
 - It specifies what properties and methods an object or class should have.
 - It only exists at compile time — it does not generate JavaScript code.
 - Similar to a contract in OOP.
+- extends use only interface time.
 
 # Intersection types in Typescript
 - An intersection type combines two or more types into one type.
 - The resulting type must satisfy all the combined types.
 - Written using the & symbol.
 <img width="928" height="301" alt="Screenshot 2025-11-22 021810" src="https://github.com/user-attachments/assets/b15a361a-72f4-4f15-bef0-67728a17d3b2" />
+
+# Type in Typescript
+What is type in TypeScript?
+- type in TypeScript is used to create custom type aliases.
+- Union only use in Type not interface
+- It allows you to give a name to any type — primitive, object, function, union, intersection, etc.
+  <br>
+  <br>
+Why use type?
+- For reusability
+- For clean, readable code
+- To define complex types
+- To create unions & intersections
+- To define function types.
+
+# Enum Data type
+- A data type that allows you to define a set of named constants.
+- Mostly define camelCase format varibleName.
+
+# DOM Handling & typescript
+What is a Class in TypeScript?
+- A class in TypeScript is a blueprint to create objects with properties (variables) and methods (functions).
+- Classes declare camelFormat
+<br>
+<br>
+TypeScript classes also support:
+✔ Type annotations
+✔ Access modifiers (public, private, protected)
+✔ Constructors
+✔ Inheritance
+✔ Readonly properties
+✔ Getters & setters
+<br>
+<br>
