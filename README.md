@@ -190,3 +190,152 @@ TypeScript classes also support:
 ✔ Getters & setters
 <br>
 <br>
+
+# Access Modifiers
+- Access modifiers are keywords used inside classes to control the visibility (accessibility) of properties and methods.
+- They help create encapsulation, which means hiding internal details and exposing only what is needed.
+- TypeScript has three main access modifiers :- Public, Private & Protected.
+
+1️⃣ public (default)ś
+- Accessible anywhere
+- From inside the class, outside the class, and subclasses
+- If you don’t write anything, TS uses public
+<img width="666" height="233" alt="Screenshot 2025-11-24 205906" src="https://github.com/user-attachments/assets/5968ceb6-2bd9-46d9-8bd8-697e82d39aac" />
+<br>
+<img width="670" height="476" alt="Screenshot 2025-11-24 205922" src="https://github.com/user-attachments/assets/9e8679ce-00ab-4f3d-aca7-3c5f9f3fc871" />
+<br>
+<img width="677" height="544" alt="Screenshot 2025-11-24 205944" src="https://github.com/user-attachments/assets/1dd9ff6f-02eb-42d6-93c5-cd441c644c4d" />
+<br>
+
+# Inheritance in Typescript
+- Inheritance works just like in other object-oriented languages (like Java or C++). It allows a class (child) to inherit properties and methods from another class (parent). This promotes code reuse and extensibility.
+<br><br>
+<img width="624" height="706" alt="Screenshot 2025-11-24 212647" src="https://github.com/user-attachments/assets/25f3cc65-befb-4773-931a-384390bf8b0b" />
+<br>
+<img width="602" height="230" alt="Screenshot 2025-11-24 212856" src="https://github.com/user-attachments/assets/2f2af641-38a1-4952-ae92-87d34eef7bb9" />
+<br>
+🔹 Why Use Inheritance?
+- Avoid code duplication
+- Organize related classes
+- Enable polymorphism
+- Simplify code maintenance
+
+# Modules in Typescript
+- Modules are a way to organize and reuse code by splitting it into separate files. Each file is treated as a module. You can export functions, classes, variables, or interfaces from one module and import them into another.
+<br>
+<img width="663" height="597" alt="Screenshot 2025-11-24 215304" src="https://github.com/user-attachments/assets/e80e32d5-8d6c-4884-be18-6d67fbe21a77" />
+<br>
+<img width="668" height="649" alt="Screenshot 2025-11-24 215337" src="https://github.com/user-attachments/assets/4a7072ff-07bc-4584-9177-bf097f35cce3" />
+<br>
+Why Use Modules?
+- Organize code into smaller, manageable files
+- Avoid global scope pollution
+- Reuse code across projects
+- Work seamlessly with ES6 module system and tools like Webpack, Vite, Node.js
+<br>
+<img width="680" height="427" alt="Screenshot 2025-11-24 215501" src="https://github.com/user-attachments/assets/d02dd782-cce5-4605-81a8-f298fc5a9965" />
+Notes - Module same of react component export and import like
+# Getter and Setter in Typescript
+- Getter & Setter helps to the modification of class when use set & get in class. 
+- Getter and setter methods in TypeScript (TS), often referred to as accessors, allow you to control access to the properties of a class. They provide a way to execute custom logic when a property is read (getter) or written to (setter).
+<br>
+🔑 Key Concepts
+Accessors are defined using the get and set keywords within a class. They operate on a private backing field (a regular class property, typically marked private) which stores the actual data.
+<br>
+1. Getter (get) - return value  
+A getter method is executed when you try to read the value of the property.
+Purpose: To retrieve the value of a private property, often after performing some calculation, formatting, or validation.
+<br>
+Syntax:
+- It must return a value.
+- It takes no arguments.
+<br>
+<img width="786" height="458" alt="Screenshot 2025-11-24 220519" src="https://github.com/user-attachments/assets/83896a8f-4223-4ee2-afe2-1fff40b65ed6" />
+<br><br>
+2. Setter (set)
+A setter method is executed when you try to assign a new value to the property.
+Purpose: To enforce data validation or perform other side effects (like triggering an update) before the new value is stored in the private backing field.
+Syntax:
+- It must take exactly one argument.
+- It does not return a value.
+<br>
+<img width="789" height="584" alt="Screenshot 2025-11-24 220627" src="https://github.com/user-attachments/assets/9fa377ad-0e06-4c49-b128-be3409dbff96" />
+
+# Interface with Class
+- Interfaces in TypeScript describe the shape of an object or class, acting as a contract. A class can use the implements keyword to declare that it adheres to this contract, ensuring it provides all the properties and methods defined by the interface.
+<br>
+<img width="1356" height="720" alt="Screenshot 2025-11-24 231925" src="https://github.com/user-attachments/assets/a59245b4-b47f-44d5-a4a6-522664a1ee40" />
+
+# Static in Typescript
+- use to define static property & Methods.
+- Memory efficiency
+- Utility method
+- Global Constants.
+<br>
+<img width="1226" height="390" alt="Screenshot 2025-11-24 234455" src="https://github.com/user-attachments/assets/3f6e1f01-6969-429b-a9c6-362e36faa7d3" />
+
+# Typeguard in Typescript (check the actual datatype in Interface, class and variable, methods)
+- A type Guard in Typescript is a technoque used to narrow down the type of a variable within a conditional block (check the actual type using conditional block)
+<br><br>
+typeof - This guard checks the basic JavaScript primitive types: string, number, boolean, symbol, bigint, undefined, and object (including arrays and null).
+<br>
+instanceof - This guard checks if a value is an instance of a specific class (or constructor function). It is useful for narrowing down class types within a union.
+<br>
+Custom type - interface
+
+# Generic In TS
+⭐ What are Generics in TypeScript?
+- Generics allow you to create reusable components that work with a variety of data types while maintaining type safety.
+They work like placeholders for types, which you can fill when using the function, class, or interface.
+- Think of generics as variables for types.
+<br>
+<img width="469" height="458" alt="Screenshot 2025-11-25 124256" src="https://github.com/user-attachments/assets/07120efe-db3d-40ef-8e73-6cb918a9b244" />
+# keyOf in Typescript 
+- The keyOf keyword in Typescript is used to get the keys of a type as a union of string.
+- It is primarily used for type safety when working woth objects.
+<img width="481" height="451" alt="Screenshot 2025-11-25 125903" src="https://github.com/user-attachments/assets/8fefb2c9-afe5-4894-8f57-7dacbb0535ce" />
+
+# Index signature in Typescript
+⭐ What are Utility Types in TypeScript?
+- An indec signature in Typescript allows to define objects with dynamic keys while specifying the type od their values.
+- Utility Types are predefined helpers in TypeScript that make it easier to manipulate types.
+They help you transform, modify, and reuse existing types without rewriting them.
+- Think of them as built-in functions for types.
+<br><br>
+1️⃣ Partial<Type>
+- Makes all properties optional.
+<img width="844" height="542" alt="Screenshot 2025-11-25 133139" src="https://github.com/user-attachments/assets/88e4b4da-0027-496a-87c4-5fa47a6bd566" />
+<br>
+2️⃣ Required<Type>
+- Opposite of Partial → makes all properties required.
+<img width="456" height="200" alt="Screenshot 2025-11-25 133519" src="https://github.com/user-attachments/assets/532c1c42-905b-40c7-8b9d-96e61fbc39d1" />
+<img width="678" height="216" alt="Screenshot 2025-11-25 133508" src="https://github.com/user-attachments/assets/33342875-c472-4b77-94cb-3b373154472d" />
+<br>
+3️⃣ Readonly<Type>
+- Makes all properties read-only.
+<img width="456" height="200" alt="Screenshot 2025-11-25 133519" src="https://github.com/user-attachments/assets/d51314f6-66c4-4aeb-94b9-907c0007526e" />
+<br>
+4️⃣ Record<K, T>
+Creates an object type where:
+- Keys = K
+- Values = T
+<img width="678" height="264" alt="Screenshot 2025-11-25 160619" src="https://github.com/user-attachments/assets/bfb70a36-ab49-4938-8e72-c7c145d2ee8e" />
+<br>
+5️⃣ Pick<Type, Key>
+- Selects only specific properties from a type.
+<img width="456" height="200" alt="Screenshot 2025-11-25 133519" src="https://github.com/user-attachments/assets/5af5733f-33a2-41ad-ab68-7f7de5ecb5d4" />
+<img width="995" height="216" alt="Screenshot 2025-11-25 135621" src="https://github.com/user-attachments/assets/151c08c5-15fa-4eb8-a6c8-273b4a844fed" />
+<br>
+6️⃣ Omit<Type, Key>
+- Opposite of Pick → removes specific keys.
+<img width="814" height="235" alt="Screenshot 2025-11-25 154839" src="https://github.com/user-attachments/assets/d7cbabf3-c0c7-4398-b319-1e6018e48be3" />
+<br>
+7️⃣ Exclude<Type, Union> & Extract<T,U>
+- Removes types from a union.
+- Extracts only matching types from a union.
+<img width="795" height="212" alt="Screenshot 2025-11-25 155118" src="https://github.com/user-
+attachments/assets/489fa6cc-dba1-48d4-95c1-52f1c375adca" />
+<br>
+9️⃣ NonNullable<T>
+- Removes null and undefined.
+<img width="912" height="123" alt="Screenshot 2025-11-25 160044" src="https://github.com/user-attachments/assets/01adf65d-6892-4d6e-943a-de361cdaff42" />
