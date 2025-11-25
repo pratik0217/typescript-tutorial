@@ -333,9 +333,32 @@ Creates an object type where:
 7️⃣ Exclude<Type, Union> & Extract<T,U>
 - Removes types from a union.
 - Extracts only matching types from a union.
-<img width="795" height="212" alt="Screenshot 2025-11-25 155118" src="https://github.com/user-
-attachments/assets/489fa6cc-dba1-48d4-95c1-52f1c375adca" />
+<img width="795" height="212" alt="Screenshot 2025-11-25 155118" src="https://github.com/user-attachments/assets/c161c1ca-933a-4f15-9c11-87c835c75a84" />
 <br>
 9️⃣ NonNullable<T>
 - Removes null and undefined.
 <img width="912" height="123" alt="Screenshot 2025-11-25 160044" src="https://github.com/user-attachments/assets/01adf65d-6892-4d6e-943a-de361cdaff42" />
+
+# Namespace in TS
+⭐ What is a Namespace in TypeScript?
+A namespace in TypeScript is a way to organize and group related code (functions, interfaces, classes, constants) under a single name.
+<br>
+Namespaces help avoid:
+- Name conflicts
+- Global scope pollution
+<img width="1298" height="638" alt="Screenshot 2025-11-25 164139" src="https://github.com/user-attachments/assets/376b8f8b-ddd3-4e54-84bf-cbd65a1125b6" />
+
+# Decorators in Typescript
+⭐ What are Decorators in TypeScript?
+A Decorator is a special kind of declaration that can be attached to classes, methods, properties, or parameters to add extra behavior or modify them at runtime.
+<br>
+- Think of them like annotations or wrappers for your code.
+- ⚠️ Decorators are experimental and require enabling experimentalDecorators in tsconfig.json.
+
+# Type Promise in TS
+⭐ What is a Promise in TypeScript?
+A Promise is a TypeScript/JavaScript object that represents a value that may be available now, later, or never.
+- It’s mainly used for asynchronous operations (like API calls, timers, or reading files).
+- TypeScript allows you to type the value that the promise will eventually return.
+
+# API CALll
