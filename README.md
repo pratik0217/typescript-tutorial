@@ -1,4 +1,4 @@
-<img width="624" height="706" alt="image" src="https://github.com/user-attachments/assets/d79be6f0-b2b8-4d33-8267-7706cb86c79d" /># TYPESCRIPT TUTORIAL
+# TYPESCRIPT TUTORIAL
 Lecture Video - https://youtu.be/oTam-6tHew4?si=L74yDfjuaSbNPxMy
 <br>
 
@@ -284,3 +284,58 @@ instanceof - This guard checks if a value is an instance of a specific class (or
 Custom type - interface
 
 # Generic In TS
+⭐ What are Generics in TypeScript?
+- Generics allow you to create reusable components that work with a variety of data types while maintaining type safety.
+They work like placeholders for types, which you can fill when using the function, class, or interface.
+- Think of generics as variables for types.
+<br>
+<img width="469" height="458" alt="Screenshot 2025-11-25 124256" src="https://github.com/user-attachments/assets/07120efe-db3d-40ef-8e73-6cb918a9b244" />
+# keyOf in Typescript 
+- The keyOf keyword in Typescript is used to get the keys of a type as a union of string.
+- It is primarily used for type safety when working woth objects.
+<img width="481" height="451" alt="Screenshot 2025-11-25 125903" src="https://github.com/user-attachments/assets/8fefb2c9-afe5-4894-8f57-7dacbb0535ce" />
+
+# Index signature in Typescript
+⭐ What are Utility Types in TypeScript?
+- An indec signature in Typescript allows to define objects with dynamic keys while specifying the type od their values.
+- Utility Types are predefined helpers in TypeScript that make it easier to manipulate types.
+They help you transform, modify, and reuse existing types without rewriting them.
+- Think of them as built-in functions for types.
+<br><br>
+1️⃣ Partial<Type>
+- Makes all properties optional.
+<img width="844" height="542" alt="Screenshot 2025-11-25 133139" src="https://github.com/user-attachments/assets/88e4b4da-0027-496a-87c4-5fa47a6bd566" />
+<br>
+2️⃣ Required<Type>
+- Opposite of Partial → makes all properties required.
+<img width="456" height="200" alt="Screenshot 2025-11-25 133519" src="https://github.com/user-attachments/assets/532c1c42-905b-40c7-8b9d-96e61fbc39d1" />
+<img width="678" height="216" alt="Screenshot 2025-11-25 133508" src="https://github.com/user-attachments/assets/33342875-c472-4b77-94cb-3b373154472d" />
+<br>
+3️⃣ Readonly<Type>
+- Makes all properties read-only.
+<img width="456" height="200" alt="Screenshot 2025-11-25 133519" src="https://github.com/user-attachments/assets/d51314f6-66c4-4aeb-94b9-907c0007526e" />
+<br>
+4️⃣ Record<K, T>
+Creates an object type where:
+- Keys = K
+- Values = T
+<img width="678" height="264" alt="Screenshot 2025-11-25 160619" src="https://github.com/user-attachments/assets/bfb70a36-ab49-4938-8e72-c7c145d2ee8e" />
+<br>
+5️⃣ Pick<Type, Key>
+- Selects only specific properties from a type.
+<img width="456" height="200" alt="Screenshot 2025-11-25 133519" src="https://github.com/user-attachments/assets/5af5733f-33a2-41ad-ab68-7f7de5ecb5d4" />
+<img width="995" height="216" alt="Screenshot 2025-11-25 135621" src="https://github.com/user-attachments/assets/151c08c5-15fa-4eb8-a6c8-273b4a844fed" />
+<br>
+6️⃣ Omit<Type, Key>
+- Opposite of Pick → removes specific keys.
+<img width="814" height="235" alt="Screenshot 2025-11-25 154839" src="https://github.com/user-attachments/assets/d7cbabf3-c0c7-4398-b319-1e6018e48be3" />
+<br>
+7️⃣ Exclude<Type, Union> & Extract<T,U>
+- Removes types from a union.
+- Extracts only matching types from a union.
+<img width="795" height="212" alt="Screenshot 2025-11-25 155118" src="https://github.com/user-
+attachments/assets/489fa6cc-dba1-48d4-95c1-52f1c375adca" />
+<br>
+9️⃣ NonNullable<T>
+- Removes null and undefined.
+<img width="912" height="123" alt="Screenshot 2025-11-25 160044" src="https://github.com/user-attachments/assets/01adf65d-6892-4d6e-943a-de361cdaff42" />
